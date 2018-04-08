@@ -1,0 +1,10 @@
+This design has been produced specially for The Complete iOS Developer Course (https://www.udemy.com/complete-ios-developer-course/)
+
+It comes with a Creative Commons 3.0 License (https://creativecommons.org/licenses/by-sa/3.0/)
+
+You are free to:
+
+Share — copy and redistribute the material in any medium or format
+Adapt — remix, transform, and build upon the material
+
+for any purpose, even commercially.
