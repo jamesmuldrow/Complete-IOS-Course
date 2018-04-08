@@ -12,6 +12,7 @@
 		1A6849A82050DD50000D3CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6849A62050DD50000D3CAF /* Main.storyboard */; };
 		1A6849AA2050DD50000D3CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6849A92050DD50000D3CAF /* Assets.xcassets */; };
 		1A6849AD2050DD50000D3CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6849AB2050DD50000D3CAF /* LaunchScreen.storyboard */; };
+		CE8076049E879FCF1BE972BB /* Pods_TwitDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EAFA7A12D28DF7D54B3B5 /* Pods_TwitDA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1A6849A92050DD50000D3CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6849AC2050DD50000D3CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6849AE2050DD50000D3CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632EAFA7A12D28DF7D54B3B5 /* Pods_TwitDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		824FDC4B1BD2A05C559CD050 /* Pods-TwitDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitDA.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA.release.xcconfig"; sourceTree = "<group>"; };
+		B9A5DA1B4A3DD2127E145582 /* Pods-TwitDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitDA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8076049E879FCF1BE972BB /* Pods_TwitDA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1A6849A12050DD50000D3CAF /* TwitDA */,
 				1A6849A02050DD50000D3CAF /* Products */,
+				8149157E22696A6801FE9A39 /* Pods */,
+				BEEED239AA0BD15334A52D2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,63 @@
 		1A6849A12050DD50000D3CAF /* TwitDA */ = {
 			isa = PBXGroup;
 			children = (
-				1A6849A22050DD50000D3CAF /* AppDelegate.swift */,
-				1A6849A42050DD50000D3CAF /* ViewController.swift */,
-				1A6849A62050DD50000D3CAF /* Main.storyboard */,
-				1A6849A92050DD50000D3CAF /* Assets.xcassets */,
-				1A6849AB2050DD50000D3CAF /* LaunchScreen.storyboard */,
-				1A6849AE2050DD50000D3CAF /* Info.plist */,
+				1A6849B42050DF49000D3CAF /* Models */,
+				1A6849B52050DF77000D3CAF /* Views */,
+				1A6849B62050DF80000D3CAF /* Controllers */,
+				1A6849B72050DFA9000D3CAF /* Dependancies */,
 			);
 			path = TwitDA;
+			sourceTree = "<group>";
+		};
+		1A6849B42050DF49000D3CAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A6849B52050DF77000D3CAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A6849AB2050DD50000D3CAF /* LaunchScreen.storyboard */,
+				1A6849A62050DD50000D3CAF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A6849B62050DF80000D3CAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A6849A42050DD50000D3CAF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A6849B72050DFA9000D3CAF /* Dependancies */ = {
+			isa = PBXGroup;
+			children = (
+				1A6849AE2050DD50000D3CAF /* Info.plist */,
+				1A6849A92050DD50000D3CAF /* Assets.xcassets */,
+				1A6849A22050DD50000D3CAF /* AppDelegate.swift */,
+			);
+			path = Dependancies;
+			sourceTree = "<group>";
+		};
+		8149157E22696A6801FE9A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9A5DA1B4A3DD2127E145582 /* Pods-TwitDA.debug.xcconfig */,
+				824FDC4B1BD2A05C559CD050 /* Pods-TwitDA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEEED239AA0BD15334A52D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632EAFA7A12D28DF7D54B3B5 /* Pods_TwitDA.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A6849B12050DD50000D3CAF /* Build configuration list for PBXNativeTarget "TwitDA" */;
 			buildPhases = (
+				F4F63A852929B7DE10141DBF /* [CP] Check Pods Manifest.lock */,
 				1A68499B2050DD50000D3CAF /* Sources */,
 				1A68499C2050DD50000D3CAF /* Frameworks */,
 				1A68499D2050DD50000D3CAF /* Resources */,
+				D97E77481D97632EF3A137DC /* [CP] Embed Pods Frameworks */,
+				02635D252975EE7474DB24C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +189,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02635D252975EE7474DB24C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97E77481D97632EF3A137DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitDA/Pods-TwitDA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F63A852929B7DE10141DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitDA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A68499B2050DD50000D3CAF /* Sources */ = {
@@ -197,6 +335,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,6 +393,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -272,11 +412,12 @@
 		};
 		1A6849B22050DD50000D3CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A5DA1B4A3DD2127E145582 /* Pods-TwitDA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USCAWPXXVM;
-				INFOPLIST_FILE = TwitDA/Info.plist;
+				INFOPLIST_FILE = TwitDA/Dependancies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmuldrow.TwitDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +428,12 @@
 		};
 		1A6849B32050DD50000D3CAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824FDC4B1BD2A05C559CD050 /* Pods-TwitDA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USCAWPXXVM;
-				INFOPLIST_FILE = TwitDA/Info.plist;
+				INFOPLIST_FILE = TwitDA/Dependancies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesmuldrow.TwitDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
